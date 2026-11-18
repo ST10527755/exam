@@ -1,4 +1,4 @@
-public class OneDimensionalArrays {
+ipublic class OneDimensionalArrays {
     public static void main(String[] args) {
         // A 1D array stores a list of names.
         String[] names = {"John", "Peter", "Mary"};
@@ -178,3 +178,17 @@ public class SalesReport {
     }
 }
 
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Create an object of SalesReport
+        SalesReport report = new SalesReport();
+
+        // Call method to enter sales
+        report.enterSales();
+
+        // Call method to display results
+        report.displayReport();
+    }
+}
