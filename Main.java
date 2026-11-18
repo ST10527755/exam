@@ -7,3 +7,12 @@ public class Main {
         SwingUtilities.invokeLater(() -> new MattressForm().setVisible(true));
     }
 }
+
+DATA LOG
+********************************
+Customer Name: Joe Bloggs
+Product: Cozy Nights Monarch
+VAT: R 525.0
+COMMISSION: R 175.0
+TOTAL: R 4200.0
+********************************
