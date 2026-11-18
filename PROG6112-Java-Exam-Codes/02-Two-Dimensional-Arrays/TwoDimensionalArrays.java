@@ -19,6 +19,54 @@ public class Product implements IProduct {
         "Sealy Phuket"
     };
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ProductTest {
+
+    // Sample sales from the question
+    int[][] sales = {
+        {25, 18, 20},
+        {15, 10, 12},
+        {18, 15, 20}
+    };
+
+    Product product = new Product(sales);
+
+    // UNIT TEST 1: Test total sales
+    @Test
+    public void GetTotalProductSales_WithValidData_ReturnsCorrectValue() {
+
+        int expected = 153;
+
+        int actual = product.GetTotalProductsSold();
+
+        assertEquals(expected, actual);
+    }
+
+    // UNIT TEST 2: Test average sales
+    @Test
+    public void GetAverageSales_WithValidData_ReturnsCorrectValue() {
+
+        double expected = 51.0;
+
+        double actual = product.GetAverageProductsSold();
+
+        assertEquals(expected, actual, 0.001);
+    }
+
+    // UNIT TEST 3: Test most popular product
+    @Test
+    public void GetMostPopularProduct_WithValidData_ReturnsCorrectValue() {
+
+        String expected = "Cosy Nights Monarch";
+
+        String actual = product.GetMostPopularProduct();
+
+        assertEquals(expected, actual);
+    }
+}
+
     // Store sales for 3 products over 3 months
     int[][] sales = new int[3][3];
 
